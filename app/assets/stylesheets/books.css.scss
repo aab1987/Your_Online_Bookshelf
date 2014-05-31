@@ -1,0 +1,26 @@
+// Place all the styles related to the books
+// controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.book {
+  border-bottom: solid 1px #CCC;
+  padding: 5px 0;
+}
+
+.book p {
+  margin: 4px 0;
+}
+
+.book.hover {
+  background: #F0F0F0;
+}
+
+
+.book .admin {
+  display: none;
+}
+
+.book.hover .admin {
+  display: inline;
+}

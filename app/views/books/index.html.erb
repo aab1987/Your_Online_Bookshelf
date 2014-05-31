@@ -1,0 +1,20 @@
+<div class="page-header">
+ <h1>All Books</h1>
+ </div>
+ <%= link_to 'Add New Book', new_book_path, class: "btn btn-success" %>
+
+ <% @book.each do |book| %>
+ <div class="book">
+   <strong><%=book.name %>
+    <p><%= book.content %></p>
+    <div class="meta">
+      <%= link_to "Show", book %>
+      <span class="admin">
+        <%= link_to "Edit", edit_book_path(book) %> |
+        <%= link_to "Delete", book, method: :delete, data: { confirm: "Are you sure?"} %>
+      </span>
+ </div>
+</div>
+
+ <% end %>
+
