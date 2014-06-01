@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 
 gem 'sqlite3'
+gem 'devise'
 
 gem 'sass-rails', '~> 4.0.3'
 
@@ -19,6 +20,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'turbolinks'
 
-
+gem 'paper_trail', '~> 3.0.2'
+gem 'railties'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
